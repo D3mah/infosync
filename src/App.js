@@ -2,9 +2,10 @@
 
 function App() {
   return (
-    <div className="wrapper">
-			
-		</div>
+	<div className="Wrapper">
+
+		
+	</div>
   );
 }
 
