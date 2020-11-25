@@ -6,11 +6,13 @@
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link rel="stylesheet" href="assets/css/uikit.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/uikit.min.js"></script>
+	<script src="assets/js/uikit-icons.min.js"></script>
 	<title>InfoSync</title>
 </head>
 <body>
 	<div class="wrapper">
-		<header class="uk-sticky">
+		<header  uk-sticky>
 			<div class="uk-container">
 				<div uk-navbar>
 					<div class="uk-navbar-left">
@@ -20,15 +22,14 @@
 					</div>
 					<div class="uk-navbar-right m-right-10">
 						<div class="list-menu"><a href="#">Главная</a></div>
-						<div class="list-menu"><a href="#">Описание</a></div>
-						<div class="list-menu"><a href="#">Возможности</a></div>
+						<div class="list-menu"><a href="#about">О приложении</a></div>
+						<div class="list-menu"><a href="#edge">Возможности</a></div>
 					</div>
 				</div>
 			</div>
 		</header>
 		<div class="photo">
 			<div class="uk-container swap">
-
 				<div class="uk-inline">
 					<div class="t-name">Страница Студента</div>
 					<img src="assets/img/1_phone.png" alt="">
@@ -39,8 +40,6 @@
 					<a class="uk-position-absolute uk-transform-center" style="left: 67%; top: 46%" href="#" uk-marker uk-tooltip="title: Статус прочтения статьи"></a>
 					<a class="uk-position-absolute uk-transform-center" style="left: 26%; top: 95%" href="#" uk-marker uk-tooltip="title: Меню"></a>
 				</div>
-			
-
 				<div class="uk-inline">
 					<div class="t-name">Страница Педагога</div>
 					<img src="assets/img/2_phone.png" alt="">
@@ -51,8 +50,6 @@
 					<a class="uk-position-absolute uk-transform-center" style="left: 60%; top: 55%" href="#" uk-marker uk-tooltip="title: Кнопка поделиться с студентами"></a>
 					<a class="uk-position-absolute uk-transform-center" style="left: 26%; top: 95%" href="#" uk-marker uk-tooltip="title: Меню"></a>
 				</div>
-
-
 				<div class="uk-inline">
 					<div class="t-name">Прочтение новости</div>
 					<img src="assets/img/3_phone.png" alt="">
@@ -62,17 +59,105 @@
 					<a class="uk-position-absolute uk-transform-center" style="left: 88%; top: 48%" href="#" uk-marker uk-tooltip="title: Текст статьи"></a>
 					<a class="uk-position-absolute uk-transform-center" style="left: 26%; top: 95%" href="#" uk-marker uk-tooltip="title: Меню"></a>
 				</div>
-
-
-	
+			</div>
+		</div>
+		
+		<div class="info uk-section" id="about">
+			<div class="uk-container">
+				<div class="main-info"><h2>О приложении</h2></div>
+				<hr class="line"></hr>
+				<div uk-grid class="p-top20">
+					<div class="uk-width-expand@m" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
+						<div class="block-info">
+							<span uk-icon="users"></span>
+							<h3>Описание</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci quidem cupiditate voluptatum, fugit totam corrupti velit? Explicabo, quisquam voluptatem? Officia perspiciatis blanditiis nulla similique est sunt, totam nemo vero!</p>
+						</div>
+					</div>
+					<div class="uk-width-expand@m" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
+						<div class="block-info">
+							<span uk-icon="home"></span>
+							<h3>Описание</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci quidem cupiditate voluptatum, fugit totam corrupti velit? Explicabo, quisquam voluptatem? Officia perspiciatis blanditiis nulla similique est sunt, totam nemo vero!</p>
+						</div>
+					</div>
+					<div class="uk-width-expand@m" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
+						<div class="block-info">
+							<span uk-icon="code"></span>
+							<h3>Описание</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci quidem cupiditate voluptatum, fugit totam corrupti velit? Explicabo, quisquam voluptatem? Officia perspiciatis blanditiis nulla similique est sunt, totam nemo vero!</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 
+		<div class="edge uk-section" id="edge">
+			<div class="uk-container">
+				<div class="main-info"><h2>Возможности</h2></div>
+				<hr class="line"></hr>
+				<div uk-grid>
+						<div class="uk-width-2-3@l">
+
+								<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+									<div>
+											<div class="uk-card uk-card-default uk-card-body">Чтение актуальных статей</div>
+									</div>
+								</div>
+
+						</div>
+						<div class="uk-width-1-3@l">
+
+							<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+								<div>
+										<div class="uk-card uk-card-default uk-card-body">Перекрестная проверка знаний</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="uk-width-1-3@l">
+
+							<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+								<div>
+										<div class="uk-card uk-card-default uk-card-body">Фильтр источников</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="uk-width-2-3@l">
+
+							<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+								<div>
+										<div class="uk-card uk-card-default uk-card-body">Группы по интересам</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="uk-width-2-3@l">
+
+							<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+								<div>
+										<div class="uk-card uk-card-default uk-card-body">Бесплатная помощь в учебе</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="uk-width-1-3@l">
+
+							<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+								<div>
+										<div class="uk-card uk-card-default uk-card-body">Item</div>
+								</div>
+							</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
-	<script src="assets/js/uikit-icons.min.js"></script>
-	<script src="assets/js/uikit.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>
 </html>

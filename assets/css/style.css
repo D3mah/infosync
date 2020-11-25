@@ -11,6 +11,9 @@
 html {
 	background-color: var(--bg);
 }
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'RobotoRegular', sans-serif;
+}
 body {
 	font-family: 'RobotoRegular', sans-serif;
 	color: var(--text);
@@ -76,4 +79,55 @@ header {
 	margin-bottom: 10px;
 	border-radius: 2px;
 	color: #fbfbfb;
+}
+.info {
+	background-color: #fbfbfb;
+}
+.main-info {
+	display: flex;
+	justify-content: center;
+}
+.main-info h2 {
+	text-transform: uppercase;
+	margin: 0px;
+}
+.line {
+	height: 15px;
+	block-size: 15px;
+	width: 30%;
+	inline-size: 30%;
+	background-color: #b99b03;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+.block-info {
+	text-align: center;
+	padding: 50px 10px;
+	transition: 0.25s ease;
+}
+.block-info:hover, .block-info:focus {
+	background-color: #ffa502;
+	color: #fbfbfb;
+	cursor: pointer;
+}
+.block-info h2:hover, .block-info h3:focus {
+	color: #fff;
+}
+.block-info span svg {
+	height: 60px;
+	width: 60px;
+}
+.p-top20 {
+	padding-top: 20px;
+	padding-block-start: 20px;
+}
+.uk-card-default {
+	transition: 0.25s ease;
+}
+.uk-card-default:hover, .uk-card-default:focus {
+	background-color: #ffa502;
+	color: #fbfbfb;
+	cursor: pointer;
+	font-family: 'RobotoBold', sans-serif;
 }
