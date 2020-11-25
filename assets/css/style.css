@@ -1,7 +1,13 @@
 :root {
 	--bg: #1c1d21;
+	--dark-50: #43424b;
 }
 .uk-container {
 	max-width: 1400px;
 	max-block-size: 1400px;
+}
+header {
+	background: var(--dark-50);
+	block-size: 60px;
+	height: 60px;
 }
