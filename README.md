@@ -1,2 +1,2 @@
 ### Project link
-https://d3mah.github.io/infosync/public/index.html
+https://d3mah.github.io/infosync/index.html
